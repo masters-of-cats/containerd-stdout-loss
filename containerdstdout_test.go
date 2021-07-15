@@ -18,12 +18,9 @@ import (
 	"github.com/opencontainers/runtime-spec/specs-go"
 )
 
-// This needs to be run as root so it can contact the containerd service
-// Setting path, and maybe gopath is required before running ginkgo:
-//
-// export GOPATH=/home/vagrant/go
-// export PATH=$PATH:/usr/local/go/bin/:$GOPATH/bin
-// ginkgo -untilItFails
+// This needs to be run as root so it can contact the containerd service.
+// Ensure you have ginkgo and go in your $PATH, and then run:
+// `ginkgo -untilItFails`
 
 const containerdSocket = "/run/containerd/containerd.sock"
 
